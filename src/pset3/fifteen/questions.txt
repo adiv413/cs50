@@ -1,0 +1,9 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3
+
+0. It allows 3x3, 5x5, 6x6, 7x7, 8x8, and 9x9.
+1. An array.
+2. The function is called to greet the player at game’s start is greet().
+3. I had to implement init(), draw(), move(), and won().

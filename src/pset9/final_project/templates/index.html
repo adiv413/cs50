@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" style="width:100%">
+      <tr>
+        <th>Assignment</th>
+        <th>Due</th>
+        <th>Difficulty</th>
+      </tr>
+
+    {% for thing in portfolio %}
+    <tr>
+    {% for item in thing.items() %}
+        <td>{% print(item[1]) %}</td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+{% endblock %}

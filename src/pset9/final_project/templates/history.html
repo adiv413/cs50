@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" style="width:100%">
+      <tr>
+        <th>Assignment</th>
+        <th>Due</th>
+        <th>Difficulty</th>
+      </tr>
+
+    {% for history in histories %}
+    <tr>
+      {% for item in history.items() %}
+        <td>{% print(item[1]) %}</td>
+    {% endfor %}
+    </tr>
+    {% endfor %}
+    </table>
+
+{% endblock %}
